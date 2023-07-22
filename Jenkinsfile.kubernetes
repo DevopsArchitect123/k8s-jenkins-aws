@@ -26,8 +26,8 @@ pipeline {
           steps {
             echo 'Push image is in progress'
             sh '''
-            docker tag appjs:latest 302590152688.dkr.ecr.eu-central-1.amazonaws.com/eladjmc-app:latest 
-            docker push 302590152688.dkr.ecr.eu-central-1.amazonaws.com/eladjmc-app:latest
+            docker tag appjs:latest box2323:latest public.ecr.aws/l2h4n7n0/box2323:latest 
+            docker push box2323:latest public.ecr.aws/l2h4n7n0/box2323:latest
             '''
           }
         }
